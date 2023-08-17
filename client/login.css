@@ -1,0 +1,67 @@
+html {
+  background-image: url(formbk.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+/*  overflow: hidden;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 2px solid #000;
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  border: 3px solid #333;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px 2em;
+  font-weight: bold;
+  color:#fff;
+}
+
+input[type="button"]:hover {
+  background-color: #999;
+}
+
+.button {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
+div {
+  margin: 10px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 120%;
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-size: 320%;
+  text-align: center;
+  letter-spacing: 5px;
+  color:#4f5656d1;
+}
+
+body {
+  width: 960px;
+  height: 540px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
