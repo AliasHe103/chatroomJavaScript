@@ -23,12 +23,6 @@ wsServer.on("connection",function (ws) {
                 }
             });
         }
-        //向所有客户端广播
-        // ws.send(`${message}`,(err)=> {
-        //     if(err) {
-        //         console.log(`[SERVER] error: ${err}`);
-        //     }
-        // });
     });
     ws.on("close",()=> {
         console.log("[SEVER] Client disconnected");
