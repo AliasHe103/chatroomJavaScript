@@ -3,10 +3,28 @@ html {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-/*  overflow: hidden;*/
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  font-size: 320%;
+  text-align: center;
+  letter-spacing: 5px;
+  color: black;
+}
+
+body {
+  width: 960px;
+  height: 540px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 input[type="text"],
@@ -25,43 +43,139 @@ input[type="button"] {
   padding: 10px 2em;
   font-weight: bold;
   color:#fff;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 input[type="button"]:hover {
   background-color: #999;
 }
 
-.button {
-  display: block;
-  width: 100px;
-  margin: 0 auto;
-}
-
-div {
-  margin: 10px;
-}
-
-label {
+form.mainWindow label {
   font-weight: bold;
   font-size: 120%;
   letter-spacing: 5px;
 }
 
-h1 {
-  font-size: 320%;
-  text-align: center;
+.mainWindow div {
+  margin: 20px;
+}
+
+.registerWindow div{
+  margin: 10px;
+}
+
+div.registerWindow label {
+  font-weight: bold;
+  font-size: 120%;
   letter-spacing: 5px;
-  color:#4f5656d1;
+  display:inline-block;
+  width: calc(50px + 10vw);
 }
 
-body {
-  width: 960px;
-  height: 540px;
-}
-
-form {
+.popupWindow {
+  overflow-y: scroll;
+  width: 50vw;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
+
+.popupWindow form div:first-child {
+  font-weight: bold;
+  font-size: 120%;
+  display: block;
+  margin: 20px;
+}
+
+.registerWindow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #999;
+}
+
+.promptWindow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#promptText {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.explain {
+  margin-bottom: 15vh;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.promptButton {
+  cursor: pointer;
+  border: 3px solid #333;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px 2em;
+  font-weight: bold;
+  color:#fff;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.promptButton:hover {
+  background-color: #999;
+}
+

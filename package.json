@@ -2,6 +2,7 @@
   "name": "chatroom-cilent",
   "version": "1.0.0",
   "dependencies": {
+    "express-fileupload": "^1.4.0",
     "ws": "^8.13.0"
   },
   "devDependencies": {

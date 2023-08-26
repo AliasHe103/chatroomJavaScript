@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>聊天室</title>
@@ -9,13 +9,41 @@
 <body>
     <h1>欢迎来到聊天室，</h1>
     <div class="mainWindow">
-    <article class="messageBox">
-    </article>
-    <div class="editWindow">
-        <label for="msgEdit">消息编辑：</label>
-        <input type="text" id="msgEdit" title="消息编辑">
-        <button class="sendButton" >发送</button>
+        <article class="messageBox">
+        </article>
+        <div class="editWindow">
+            <label for="msgEdit">消息编辑：</label>
+            <input type="text" id="msgEdit" title="消息编辑">
+            <button class="sendButton" >发送</button>
+        </div>
+        <aside class="leftAside">
+            <nav>
+                <ul>
+                    <li id="nicknameEdit">编辑昵称</li>
+                    <li>发送视频</li>
+                    <li class="specialEvent">
+                            <div>
+                                <p class="eventText"></p>
+                                <button class="determineButton" >确定</button>
+                                <button class="cancelButton">取消</button>
+                            </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <aside class="rightAside">
+            <nav>
+                <ul>
+                    <li id="nicknameDisplay">昵称：</li>
+                </ul>
+            </nav>
+        </aside>
     </div>
+    <div class="promptWindow">
+        <div id="promptText">
+            <p class="explain"></p>
+            <button class="promptButton" >确定</button>
+        </div>
     </div>
 </body>
 </html>

@@ -8,9 +8,13 @@ html {
     justify-content:center;
 }
 
+h1 {
+    color: aliceblue;
+    font-family: fantasy,cursive;
+}
+
 .mainWindow{
     display:block;
-
 }
 
 .messageBox {
@@ -19,4 +23,148 @@ html {
     width: calc(100px + 50vw);
     height: calc(100px + 40vh);
     overflow-y: scroll;
+}
+
+.sendButton {
+    cursor: pointer;
+    background-color: paleturquoise;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.sendButton:hover {
+    border: 3px solid #03A9F4;
+}
+
+#msgEdit {
+    width: calc(100px + 5vw);
+    margin: calc(5px + 5vh);
+}
+
+aside.leftAside {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+aside.rightAside {
+    position: absolute;
+    right: 2vw;
+    top: 0px;
+}
+
+.leftAside nav ul li:not(.specialEvent) {
+    display: block;
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+.leftAside nav ul li:hover:not(li.specialEvent) {
+    cursor: pointer;
+    background-color: #99999985;
+}
+
+.rightAside nav ul li {
+    display: block;
+    width: 10vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-bottom: 5vh;
+}
+
+li.specialEvent {
+    display: flex;
+    width: 15vw;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    line-height: 5vh;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+.specialEvent button {
+    cursor: pointer;
+    background-color: paleturquoise;
+    width: 3vw;
+    height: 5vh;
+    margin: 5vh 2vw 2vh;
+    border-radius: 5px;
+}
+
+.specialEvent button:hover {
+    background-color: #99999985;
+}
+
+p.eventText {
+    display: block;
+}
+
+.promptWindow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.editWindow {
+    background-color: rgb(0 206 255 / 32%);
+}
+
+#promptText {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.explain {
+    margin-bottom: 15vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.promptButton {
+    cursor: pointer;
+    border: 3px solid #333;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px 2em;
+    font-weight: bold;
+    color:#fff;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.promptButton:hover {
+    background-color: #999;
 }

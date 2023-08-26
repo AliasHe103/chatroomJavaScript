@@ -17,7 +17,7 @@ input[type="password"] {
   width: 500px;
 }
 
-input[type="submit"] {
+input[type="button"] {
   cursor: pointer;
   border: 3px solid #333;
   background-color: #333;
@@ -27,7 +27,7 @@ input[type="submit"] {
   color:#fff;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: #999;
 }
 
@@ -51,6 +51,7 @@ h1 {
   font-size: 320%;
   text-align: center;
   letter-spacing: 5px;
+  color:#4f5656d1;
 }
 
 body {

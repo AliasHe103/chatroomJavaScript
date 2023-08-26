@@ -9,18 +9,48 @@
   </head>
   <body>
     <h1>用户登录</h1>
-    <form>
+    <form class="mainWindow">
         <div>
-          <label for="name">昵称：</label>
-          <input type="text" id="name" title="昵称">
+            <label for="account">账号：</label>
+            <input type="text" id="account" title="账号">
         </div>
         <div>
-          <label for="password">密码：</label>
-          <input type="password" id="password" title="密码">
+            <label for="password">密码：</label>
+            <input type="password" id="password" title="密码">
         </div>
         <div>
-          <input class="button" type="button" value="登录">
+            <input class="login" type="button" value="登录">
+            <input class="register" type="button" value="注册">
         </div>
     </form>
-</body>
+    <div class="registerWindow">
+        <div class="popupWindow">
+        <form>
+            <div>注册账号</div>
+            <div>
+                <label for="accountRegister">请输入账号：</label>
+                <input type="text" id="accountRegister" title="输入账号">
+            </div>
+            <div>
+                <label for="passwordRegister1">请输入密码：</label>
+                <input type="password" id="passwordRegister1" title="输入密码">
+            </div>
+            <div>
+                <label for="passwordRegister2">请再次输入密码：</label>
+                <input type="password" id="passwordRegister2" title="再次输入密码">
+            </div>
+            <div>
+                <input class="registerSubmit" type="button" value="注册">
+            </div>
+            <div class="close" id="close-popup">&times;</div>
+        </form>
+        </div>
+    </div>
+    <div class="promptWindow">
+        <div id="promptText">
+            <p class="explain"></p>
+            <button class="promptButton" >确定</button>
+        </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,22 @@
+html {
+    background-image: url("roombg.jpg");
+    background-size: auto,100%;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.mainWindow{
+    display:block;
+
+}
+
+.messageBox {
+    border: 5px solid black;
+    background-color: aliceblue;
+    width: calc(100px + 50vw);
+    height: calc(100px + 40vh);
+    overflow-y: scroll;
+}
